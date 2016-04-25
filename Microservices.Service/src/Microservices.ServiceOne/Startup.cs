@@ -1,12 +1,19 @@
-﻿using Microsoft.AspNet.Builder;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microservices.Data;
 using Microsoft.Data.Entity;
 using Microsoft.Extensions.Logging;
+using Microservices.Logic.Interfaces;
+using Microservices.Logic;
 
-namespace Microservices.ServiceTwo
+namespace Microservices.ServiceOne
 {
     public class Startup
     {
@@ -37,6 +44,8 @@ namespace Microservices.ServiceTwo
             services.AddCors();
 
             services.AddMvc();
+
+            services.AddTransient<IGetEvents, EventData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

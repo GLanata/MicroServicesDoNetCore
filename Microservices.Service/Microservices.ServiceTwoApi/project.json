@@ -1,6 +1,6 @@
-﻿{
+{
   "version": "1.0.0-*",
-  "description": "Microservices.CreateEventApi Class Library",
+  "description": "Microservices.ServiceTwoApi Class Library",
   "authors": [ "Gavin" ],
   "tags": [ "" ],
   "projectUrl": "",
@@ -8,6 +8,7 @@
 
   "dependencies": {
     "Microservices.DbContext": "1.0.0-*",
+    "Microservices.Logic": "1.0.0-*",
     "Microservices.Models": "1.0.0-*",
     "Microsoft.AspNet.Mvc.ViewFeatures": "6.0.0-rc1-final"
   },
