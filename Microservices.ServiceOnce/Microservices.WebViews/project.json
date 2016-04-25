@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Microservices.WebViews Class Library",
+  "authors": [ "Gavin" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.AspNet.Mvc.ViewFeatures": "6.0.0-rc1-final"
+  },
+
+  "frameworks": {
+    "dnxcore50": { }
+  }
+}

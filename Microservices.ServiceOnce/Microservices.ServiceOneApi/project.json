@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "description": "Microservices.ServiceOneApi Class Library",
+  "authors": [ "Gavin" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microservices.DbContext": "1.0.0-*",
+    "Microservices.Models": "1.0.0-*",
+    "Microsoft.AspNet.Mvc.ViewFeatures": "6.0.0-rc1-final"
+  },
+
+  "frameworks": {
+    "dnxcore50": {}
+  }
+}
