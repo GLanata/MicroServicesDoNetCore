@@ -36,11 +36,10 @@
         newEvent.Name = self.NewEventName();
 
         $.post("http://localhost:5002/api/createevent/create", newEvent, function (result) {
-            alert(result);
 
-            //if (result) {
-            //    self.getCurrentEvents();
-            //}
+            if (result) 
+                self.getCurrentEvents();
+
         });
     }
 }

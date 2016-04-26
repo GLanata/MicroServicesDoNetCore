@@ -1,6 +1,42 @@
 ﻿<div class="container">
     <div class="row">
         <div class="col-md-6 col-md-push-3 page-header">
+            <h3>Create Event</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-3 control-label">Event Name: </label>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Please give this event a name." class="form-control" data-bind="value: NewEventName" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Event Date: </label>
+                <div class="col-md-2">
+                    <input type="date" class="form-control" data-bind="value: NewEventDate" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-md-push-3">
+            <button class="btn btn-primary" data-bind="click: createEvent">Create Event</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <hr />
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-push-3 page-header">
             <h2>Events</h2>
         </div>
     </div>
@@ -23,43 +59,6 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <hr />
-</div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-push-3 page-header">
-            <h3>Create Event</h3>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">        
-        <div class="form-horizontal">
-            <div class="form-group">
-                <label class="col-md-3 control-label">Event Name: </label>
-                <div class="col-md-4">
-                    <input type="text" placeholder="Please give this event a name." class="form-control" data-bind="value: NewEventName" />
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-3 control-label">Event Date: </label>
-                <div class="col-md-2">
-                    <input type="date" class="form-control" data-bind="value: NewEventDate" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2 col-md-push-3">
-            <button class="btn btn-primary" data-bind="click: createEvent">Create Event</button>
         </div>
     </div>
 </div>
